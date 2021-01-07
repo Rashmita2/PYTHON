@@ -1,0 +1,5 @@
+f = open('mydata.txt', 'r')
+print(f.read(), end="")
+f1 = open('abc.txt','w+')
+f1.write('This is the first line\n')
+f1.write('This is another line')
