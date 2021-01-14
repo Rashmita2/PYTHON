@@ -1,43 +1,37 @@
-import pandas as pd
 import requests
-
+import pandas as pd
 from bs4 import BeautifulSoup
 
-page = requests.get('https://forecast.weather.gov/MapClick.php?lat=31.46273304600004&lon=-99.33305008999997#.X_k4k-BMHfZ')
+page = requests.get('https://forecast.weather.gov/MapClick.php?lat=31.46273304600004&lon=-99.33305008999997#.X_6I8uBMH-Y')
 soup = BeautifulSoup(page.content, 'html.parser')
-#soup is all the html content of the page
+#contains html course in that webpage
 #print(soup)
-#find all the a tag
-#print(soup.find_all('a'))
-#shows all the thing inside the div
+#create a variable to store the div, id from the webpages
 week = soup.find(id='seven-day-forecast-body')
-#print(week)
-#print(wee.find_all('id'))
-items = week.find_all(class_ ='tombstone-container')
-#print(items[0])
-'''
-print(items[0].find(class_='period-name').get_text())
-print(items[0].find(class_='short-desc').get_text())
-print(items[0].find(class_='temp').get_text())
+#contains all the tombstone-container
+items = week.find_all(class_ = 'tombstone-container')
+print(items[2])
+#get all the names of days, weather and temperature and put into one column
+#this can print the first items
+#print(items[0].find(class_ = 'period-name').get_text())
+#print(items[0].find(class_ = 'short-desc').get_text())
+#print(items[0].find(class_ = 'temp').get_text())
 
-'''
-#use a for loop to get all the items
+#writing a for loop to get all the items using list comprehension
+period_name = [item.find(class_ = 'period-name').get_text() for item in items]
+short_description = [item.find(class_ = 'short-desc').get_text() for item in items]
+temperature = [item.find(class_ = 'temp').get_text() for item in items]
+print(period_name)
+print(short_description)
+print(temperature)
 
-period_names = [item.find(class_='period-name').get_text() for item in items]
-short_descriptions = [item.find(class_='short-desc').get_text() for item in items]
-temperatues = [item.find(class_='temp').get_text() for item in items]
-print(period_names)
-print()
-print(short_descriptions)
-print()
-print(temperatues)
-
-#dictionary with pandas-it turns into the tables
+#import in the csv file using pandas
 weather_stuff = pd.DataFrame({
-    'period':period_names,
-    'short_descriptions':short_descriptions,
-    'temperatures':temperatues
+    'Period': period_name,
+    'Description': short_description,
+    'temperature': temperature
 })
+print()
 print(weather_stuff)
+weather_stuff.to_csv('result.csv')
 
-weather_stuff.to_csv('weather.csv')
