@@ -1,0 +1,39 @@
+#header {
+    background-color: pink;
+    padding: 24px;
+    grid-area: header;
+    height: 100px;
+}
+
+#footer {
+    background-color: rgb(110, 110, 210);
+    padding: 24px;
+    grid-area: footer;
+    height: 100px;
+}
+
+
+#aside {
+    background-color: green;
+    padding: 24px;
+    grid-area: aside;
+}
+
+#sidebar {
+    background-color: purple;
+    padding: 24px;
+    grid-area: sidebar;
+}
+#main {
+    background-color: yellow;
+    padding: 24px;
+    grid-area: main;
+    height: 460px;
+}
+
+#grid-container {
+display: grid;
+grid-template-areas: 'header header header header header header'
+'sidebar main main main main aside'
+'footer footer footer footer footer footer'
+}
