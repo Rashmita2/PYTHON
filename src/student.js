@@ -1,11 +1,20 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
-const student = () => {
-    return (
-        <div>
-            <h1>This is student</h1>
-        </div>
-    )
+
+class student {
+    constructor(name){
+        this.name = name;
+    }
+    present(){
+        return this.name + 'is present';
+    }
 }
+var person;
+person = new student ("Harry");
+person.present();
 
-export default student
+
+
+ReactDOM.render(<student />, document.getElementById('root'));
+

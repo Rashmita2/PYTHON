@@ -1,14 +1,15 @@
-import React from 'react';
-import './App.css';
-import Student from './student'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>I love programming</h1>
-    <Student />
-    </div>
-  );
+import './App.css';
+import React from 'react';
+
+class App extends React.Component {
+ constructor(){
+   super();
+  this.brand = "VOLVO";
+ }
+  render() {
+   return <h1>My favourite car is {this.brand}</h1>;
+}
 }
 
-export default App;
+export default App
