@@ -1,2 +1,2 @@
 # LearningLanguages
-Learning Python, Java, JavaScript, CSS and Data Structures and Algorithms
+Learning Python, Java, JavaScript, C#, CSS and Data Structures and Algorithms
