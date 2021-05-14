@@ -6,6 +6,8 @@ namespace Startapplication
     {
         static void Main(string[] args)
         {
+            
+            //condition ? statement 1 : statement 2
             bool correct = true;
             int points = correct ? 10 : 0;
             Console.WriteLine(points);
