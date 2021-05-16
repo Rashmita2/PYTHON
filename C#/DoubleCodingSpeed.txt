@@ -13,3 +13,10 @@ Select and Ctrl K + Ctrl C to mark the selection as a comment
 Select and Ctrl K + Ctrl U to remove the comment
 Ctrl + K Ctrl + K(twice) to add a bookmark in the code
 Ctrl +W B to view the bookmarks windows
+Ctrl M Ctrl M to expand or collapse the block of code
+Ctrl + Tab to switch the tabs
+Ctrl + F6 to go to the next tab
+Ctrl + F4 to close the current tab
+Shift + Alt + Enter to open and close the full screen
+Alt + W + L to close all the open tabs
+Ctrl + , to navigate dialog
