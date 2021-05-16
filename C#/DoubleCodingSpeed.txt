@@ -1,0 +1,15 @@
+Using Visual Studio in Windows
+
+Ctrl + arrow key to move the cursor one word at a time
+Ctrl + End to move the cursor to the end line of the code
+Ctrl + home to move the cursor to the beginning line of the code.
+Fn + End to move the cursor to the end of the line.
+Fn + Home to move the cursor to the beginning of the line.
+Page Up or Page Down to scroll up or down of the page
+Shift + right/left arrow to select the word 
+Ctrl + L to delete the current line
+Ctrl + X to delete the current line
+Select and Ctrl K + Ctrl C to mark the selection as a comment
+Select and Ctrl K + Ctrl U to remove the comment
+Ctrl + K Ctrl + K(twice) to add a bookmark in the code
+Ctrl +W B to view the bookmarks windows
