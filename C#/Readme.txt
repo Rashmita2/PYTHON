@@ -5,6 +5,3 @@ Constructor has the same name as a class. It initializes an object.
 Object initializer is needed to avoid creating multiple constructors.  
 Overloading methods - Same name but different parameters.
 Overriding methods - Same name and same parameters.  
-
-
-
