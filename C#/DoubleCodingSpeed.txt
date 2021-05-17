@@ -20,3 +20,16 @@ Ctrl + F4 to close the current tab
 Shift + Alt + Enter to open and close the full screen
 Alt + W + L to close all the open tabs
 Ctrl + , to navigate dialog
+Ctrl + H to open a replace dialog
+Ctrl + F5 to run the program
+F5 to run in the debug mode
+F9 for the breakpoint
+Ctrl + Shift + B to build the application without running it
+Alt + Tab to switch between applications
+Ctrl + R to refresh the current page
+prop + tab tab for properties
+ctor + tab for code snippet for constructors
+cw + tab for Console.WriteLine()
+tryf + Tab for try finally block
+foreach + tab to create the foreach loop
+
